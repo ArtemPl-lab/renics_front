@@ -4,8 +4,7 @@ module.exports = {
       defaultLocale: 'ru',
     },
     env: {
-      // apiUrl: 'https://api.renics.org',
-      apiUrl: 'http://localhost:4000',
+      apiUrl: 'https://api.renics.org',
     },
     images: {
       domains: ['api.renics.org'],
