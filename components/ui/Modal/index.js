@@ -66,7 +66,7 @@ const ModalWrapper = () => {
                 show: false
             }
         }));
-        router.replace(router.route)
+        router.replace(window.location.pathname)
     }
     return(
         <>

@@ -14,13 +14,15 @@ export const Preorder = () => {
         phone: null
     });
     const hide = () => {
-        router.replace(router.route)
+        router.replace(window.location.pathname)
     }
     const loadProduct = async () => {
-        const productId = router.asPath.replace(`${router.pathname}#preorder-`, '');
-        const prod = await Product.findById(productId);
-        if(prod) setProduct(prod);
-        console.log(prod);
+        
+        const productId = router.asPath.split('#preorder-')[1];
+        if(productId){
+            const prod = await Product.findById(productId);
+            if(prod) setProduct(prod);
+        }
     }
     const handleChange = e => {
         console.log(e.target.value);
