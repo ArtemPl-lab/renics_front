@@ -1,0 +1,35 @@
+.wrapper{
+    position: relative;
+    padding-right: 10px;
+}
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon svg{
+    margin-left: 5px;
+}
+.hidden{
+    position: absolute;
+    top: calc(100% + 12px);
+    right: 0;
+    background: #FFFFFF;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    transition: .3s;
+    opacity: 0;
+    box-shadow: 0px 0px 10px rgb(0 0 0 / 10%);
+}
+.hidden a{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    white-space: nowrap;
+}
+.wrapper:hover .hidden{
+    opacity: 1;
+}

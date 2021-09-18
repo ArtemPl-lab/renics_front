@@ -1,0 +1,35 @@
+.wrapper {
+  width: 277px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #081744;
+  margin-bottom: 20px;
+}
+
+.item {
+  border-bottom: 2px solid #E5E5E5;
+  font-size: 14px;
+  line-height: 22px;
+  margin-bottom: 20px;
+}
+
+.name {
+  color: #081744;
+}
+
+.data {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  color: #8B8E96;
+}
+
+.comments,
+.comments_count,
+.view {
+  margin-right: 10px;
+}

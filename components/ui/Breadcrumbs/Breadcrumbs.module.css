@@ -1,0 +1,23 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+}
+.item{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+    text-decoration: none;
+}
+.current{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+}
+.delemeter{
+    margin-left: 14px;
+    margin-right: 14px;
+}

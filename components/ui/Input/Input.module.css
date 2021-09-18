@@ -1,0 +1,27 @@
+.input{
+    font-family: 'Montserrat';
+    display: block;
+    width: 100%;
+    padding: 11px 17px 7px 17px;
+    outline: none;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 5px;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+    transition: .3s;
+}
+.input::placeholder{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+}
+.input:focus, .input:active{
+    transform: scale(1.01);
+    border-color: #336CCA;
+}

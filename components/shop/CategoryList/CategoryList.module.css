@@ -1,0 +1,32 @@
+.wrapper{
+    display: flex;
+    flex-direction: column;
+}
+.item{
+    display: block;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+    margin-bottom: 10px;
+    text-decoration: none;
+    transition: opacity .3s;
+}
+.item:hover{
+    opacity: .75;
+}
+.item.root{
+    color: #081744;
+}
+.item.bold{
+    font-weight: bold;
+}
+.children{
+    padding-left: 20px;
+    max-height: 0;
+    overflow: hidden;
+}
+.children.active{
+    max-height: 1000px;
+}

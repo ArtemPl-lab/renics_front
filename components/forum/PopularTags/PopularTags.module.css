@@ -1,0 +1,34 @@
+.wrapper {
+  width: 277px;
+  padding-left: 30px;
+  border-left: 2px solid #E5E5E5;
+  position: sticky;
+  top: 60px;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+  color: #081744;
+  margin-bottom: 20px;
+}
+
+.item {
+  margin-bottom: 16px;
+}
+
+
+.amount {
+  font-size: 13px;
+  line-height: 16px;
+  color: #8B8E96;
+  margin-left: 8px;
+}
+
+.link {
+  font-size: 13px;
+  line-height: 16px;
+  color: #081744;
+  text-decoration: none;
+}

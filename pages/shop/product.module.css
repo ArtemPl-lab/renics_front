@@ -1,0 +1,56 @@
+.wrapper{
+    padding-top: 30px;
+}
+.card{
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-column-gap: 30px;
+} 
+.info{
+    padding-top: 5px;
+}
+.title{
+    font-family: 'Stolzl';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 110%;
+    color: #081744;
+}
+.articul{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+    margin-top: 8px;
+}
+.price{
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+.price .default{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 29px;
+    color: #E90B54;
+    margin-right: 20px;
+}
+.price .sale{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    text-decoration-line: line-through;
+    color: #B4BCC4;
+}
+.inStock{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+    margin-top: 30px;
+}

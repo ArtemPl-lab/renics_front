@@ -1,0 +1,35 @@
+.wrapper {
+  height: 675px;
+  background-color: #35A8DF;
+  padding-top: 175px;
+  background-image: url(/images/404-bg.svg);
+ 
+  background-position: bottom;
+  background-repeat: no-repeat;
+}
+
+.text {
+  font-family: Stolzl, sans-serif;
+  font-weight: bold;
+  color: #FFFFFF;
+}
+
+.text1 {
+  font-size: 64px;
+}
+
+.text2 {
+  font-weight: 500;
+  font-size: 36px;
+  margin: 31px 0;
+}
+
+.text3 {
+  font-family: Montserrat, sans-serif;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.line {
+  margin-top: -370px;
+}

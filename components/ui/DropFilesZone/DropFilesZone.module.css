@@ -1,0 +1,114 @@
+.wrapper{
+    background-color: #336CCA;
+    background-repeat: no-repeat;
+    background-position: top left;
+    width: 100%;
+    min-height: 170px;
+    border-radius: 20px;
+    position: relative;
+    transition: .3s;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+.wrapper.highlight{
+    background-color: #448DDB;
+}
+/* dropzone border  */
+.wrapper::before{  
+    content: '';
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 100% 100%" fill="none" xmlns="http://www.w3.org/2000/svg"><rect x="0" y="0" width="100%" height="99.5%" rx="20" stroke="white" stroke-dasharray="10 10"/></svg>');
+    z-index: 0;
+}
+.content{
+    position: absolute;
+    top: 7px;
+    left: 7px;
+    right: 7px;
+    bottom: 7px;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.title{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 24px;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.btn{
+    background: #FFFFFF;
+    border-radius: 37px;
+    padding: 18px 45px;
+    cursor: pointer;
+    transition: .3s;
+    display: block;
+    margin-top: 18px;
+    position: relative;
+    z-index: 2;
+}
+.btn:hover{
+    opacity: .9;
+}
+.file{
+    position: absolute;
+    z-index: -1;
+    opacity: 0;
+}
+.desc{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+    color: #FFFFFF;
+    margin-top: 15px;
+}
+.info{
+    margin-top: 18px;
+    padding-top: 20px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: rgba(255, 255, 255, .5);
+    background: #114AA8;
+    border-top-right-radius: 37px;
+    border-bottom-right-radius: 37px;
+    padding-right: 50px;
+    min-width: 250px;
+    position: relative;
+    transition: .3s;
+}
+.info::before{
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 30px;
+    top: 0;
+    left: -30px;
+    background: #114AA8;
+}
+.info.active{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 18px;
+    color: #FFFFFF;
+}
+.file_input{
+    display: flex;
+    /* margin-top: 20px; */
+}

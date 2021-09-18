@@ -1,0 +1,38 @@
+.background{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0);
+    width: 100vw;
+    height: 100vh;
+    transition: .3s;
+    z-index: -1;
+}
+.background.active{
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10;
+}
+.modal{
+    padding: 30px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    width: 438px;
+    height: 382px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: opacity .3s, z-index .3s;
+    z-index: -1;
+}
+.modal.show{
+    animation: show_modal;
+    animation-duration: .3s;
+    opacity: 1;
+    z-index: 11;
+}
+.modal.hidden{
+    opacity: 0;
+}

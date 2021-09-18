@@ -1,0 +1,40 @@
+.wrapper{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none;   /* Chrome/Safari/Opera */
+    -khtml-user-select: none;    /* Konqueror */
+    -moz-user-select: none;      /* Firefox */
+    -ms-user-select: none;       /* Internet Explorer/Edge */
+    user-select: none;
+}
+.wrapper.ASC, .wrapper.DESC{
+    font-weight: bold;
+    color: #E90B54;
+}
+
+.wrapper .arrow{
+    opacity: 0;
+    transition: .3s;
+    margin-left: 5px;
+    display: flex;
+    align-items: center;
+    transform-origin: center center;
+    line-height: 15px;
+}
+
+.wrapper.ASC .arrow{
+    opacity: 1;
+    transform: rotate(0);
+}
+.wrapper.DESC .arrow{
+    opacity: 1;
+    transform: rotate(180deg);
+    margin-top: 4px;
+}

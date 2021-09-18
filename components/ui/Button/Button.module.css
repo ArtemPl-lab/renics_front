@@ -1,0 +1,103 @@
+
+.button {
+    display: block;
+    width: 200px;
+    height: 40px;
+    outline: none;
+    border: none;
+    text-align: left;
+    cursor: pointer;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: .3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    transition: .3s;
+    text-decoration: none;
+}
+
+.button::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0; 
+    top: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    box-sizing: border-box;
+    border-radius: 20px;
+    opacity: 0;
+    transition: .3s;
+}
+.button.md {
+    width: 200px;
+}
+.button.sm {
+    width: 165px;
+}
+.default{
+    color: #FFFFFF;
+    background: #E90B54;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+}
+.default::after{
+    background: #E90B54;
+}
+.default:hover{
+    background: rgba(233, 11, 84, 0.8);
+}
+.gray{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
+    color: #8B8E96;
+    background: #F2F2F2;
+    border: 2px solid #E5E5E5;
+}
+.gray:hover{
+    background: rgba(242, 242, 242, 0.8);
+}
+.active{
+    animation: colorise ease-in-out;
+    animation-duration: .3s;
+    background: #336CCA;
+}
+.active::after{
+    animation: blink2 ease-in-out;
+    animation-duration: .3s;
+}
+.active:hover{
+    background: rgba(51, 108, 202, 0.8);
+}
+@keyframes colorise{
+    0%{
+        background: #E90B54;
+    }
+    100%{
+        background: #336CCA;
+    }
+}
+@keyframes blink2{
+    0%{
+        transform: scaleY(1) scaleX(1);
+        background: #E90B54;
+        opacity: .3;
+    }
+    50%{
+        transform: scaleY(1.2) scaleX(1.08);
+        opacity: .3;
+    }
+    100%{
+        transform: scaleY(1) scaleX(1);
+        background: #336CCA;
+        opacity: .3;
+    }
+}

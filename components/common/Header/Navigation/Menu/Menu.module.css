@@ -1,0 +1,13 @@
+.link{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #FFFFFF;
+    text-decoration: none;
+    transition: .3s;
+    margin-right: 30px;
+}
+.link:hover{
+    opacity: .8;
+}

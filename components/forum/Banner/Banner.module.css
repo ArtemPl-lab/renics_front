@@ -1,0 +1,15 @@
+.banner {
+  background-image: url(/images/banner-bg.svg);
+  background-color: #35A8DF;
+  border-radius: 10px;
+  margin: 20px auto;
+  padding: 46px 30px 26px;
+  color: #FFFFFF;
+  font-weight: bold;
+}
+
+.questions {
+  font-family: 'Stolzl';
+  font-size: 64px;
+  margin-bottom: 24px;
+}

@@ -1,0 +1,17 @@
+stages:
+    - deploy
+deploy:
+    stage: deploy
+    script:
+        - echo "Building deploy package"
+        - npm install --prefer-offline --no-audit
+        - npm run build
+        - echo "Build successful"
+        - pm2 delete server.js || true
+        - pm2 start server.js
+        - echo "Server started"
+    only:
+        - master
+    environment:
+        name: production
+        url: https://renics.org

@@ -1,0 +1,71 @@
+.locale{
+    display: flex;
+    align-items: center;
+    position: relative;
+    cursor: pointer;
+}
+.locale .current{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    padding-right: 8px;
+    position: relative;
+    z-index: 2;
+    cursor: pointer;
+}
+.locale:hover .popUp{
+    z-index: 4;
+    opacity: 1;
+}
+.locale:focus .popUp{
+    z-index: 4;
+    opacity: 1;
+}
+.popUp{
+    position: absolute;
+    top: 20px;
+    right: 0;
+    cursor: default;
+    width: 175px;
+    opacity: 0;
+    z-index: -1;
+    transition: opacity .3s linear;
+}
+.popUp .wrapper{
+    padding: 16px;
+    background: #FFFFFF;
+    border-radius: 10px;
+    margin-top: 16px;
+}
+.popUp .title{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 17px;
+    color: #000000;
+    white-space: nowrap;
+}
+.link{
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 13px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    color: #081744;
+    white-space: nowrap;
+    padding-right: 6px;
+    text-decoration: none;
+    margin-top: 8px;
+    transition: .1s;
+}
+.link:hover{
+    color: #E90B54;
+}

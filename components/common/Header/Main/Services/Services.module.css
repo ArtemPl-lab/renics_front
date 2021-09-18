@@ -1,0 +1,8 @@
+.services{
+    margin-left: 85px;
+    margin-right: 85px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    position: relative;
+}

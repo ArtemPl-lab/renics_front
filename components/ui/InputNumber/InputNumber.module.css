@@ -1,0 +1,46 @@
+.count {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 148px;
+    height: 40px;
+}
+
+.count button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: #FFFFFF;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 20px;
+    transition: .3s;
+}
+
+.count button:disabled path {
+    stroke: #E5E5E5 !important;
+}
+
+.count .num {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #081744;
+}
+
+.count input {
+    width: 40px;
+    height: 40px;
+    border: 1px solid #E5E5E5;
+    box-sizing: border-box;
+    border-radius: 2px;
+    text-align: center;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 18px;
+    color: #081744;
+}

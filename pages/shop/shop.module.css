@@ -1,0 +1,41 @@
+section .header{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    margin-bottom: 45px;
+}
+.promo{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background: #F2F2F2;
+}
+.popular{
+    padding-top: 40px;
+    padding-bottom: 10px;
+}
+.customer{
+    padding-top: 0px;
+    padding-bottom: 10px;
+}
+.news{
+    padding-top: 40px;
+    padding-bottom: 60px;
+    background: #F2F2F2;
+}
+.product{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+.arrow{
+    border: none;
+    outline: none;
+    background: transparent;
+    padding: 0;
+    margin: 0;
+    transition: .3s;
+    margin-left: 7px;
+    margin-right: 7px;
+}
+.arrow:hover{
+    opacity: .8;
+}

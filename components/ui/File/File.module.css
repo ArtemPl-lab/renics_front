@@ -1,0 +1,28 @@
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+  width: 791px;
+}
+
+.document {
+  display: flex;
+  align-items: center;
+  width: 360px;
+  padding: 10px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: .3s;
+}
+
+.document:hover {
+  background: #F2F2F2;
+}
+
+.text {
+  font-family: Montserrat;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 17px;
+  color: #081744;
+  margin-left: 23px;
+}

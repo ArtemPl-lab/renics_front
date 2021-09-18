@@ -1,0 +1,80 @@
+.promo{
+    position: relative;
+    width: 100%;
+    height: 410px;
+}
+.slider{
+    width: 100%;
+    height: 410px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+.slide{
+    width: 100%;
+    height: 410px;
+    position: relative;
+}
+.slideBg{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    object-fit: cover;
+}
+.arrow{
+    background: transparent;
+    border: none;
+    outline: none;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 5;
+}
+.prev{
+    left: 20px;
+}
+.next{
+    right: 20px;
+}
+
+.content{
+    padding-left: 84px;
+    position: relative;
+    z-index: 5;
+}
+.promoText{
+    margin-top: 143px;
+    margin-bottom: 29px;
+    background: #336CCA;
+    padding: 7px 16px 14px 19px;
+    max-width: 895px;
+    position: relative;
+}
+.slide .promoText h2{
+    /* font-family: 'Stolzl'; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 100%;
+    color: #FFFFFF;
+    margin-bottom: 7px;
+}
+.slide .promoText p{
+    /* font-family: 'Stolzl'; */
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 22px;
+    color: #FFFFFF;
+}
+.promoText::after{
+    content: url(/images/content-line.svg);
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    transform: translateY(50%);
+    width: 100%;
+}

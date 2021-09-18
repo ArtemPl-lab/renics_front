@@ -1,0 +1,48 @@
+.wrapper{
+    display: flex;
+    margin-bottom: 30px;
+}
+.avatar{
+    margin-top: 5px;
+    min-width: 50px;
+}
+.content{
+    margin-left: 38px;
+}
+.header{
+    display: flex;
+}
+.username{
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+}
+.date{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+    margin-left: 22px;
+}
+.stars{
+    margin-top: 15px;
+}
+.review{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #081744;
+    margin-top: 15px;
+}
+.validate{
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #8B8E96;
+    margin-top: 15px;
+}

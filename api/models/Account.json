@@ -1,0 +1,42 @@
+{
+    "name": "Account",
+    "plural": "accounts",
+    "base": "User",
+    "idInjection": true,
+    "options": {
+      "validateUpsert": true
+    },
+    "properties": {
+      "currentOrder": {
+        "type": "string"
+      }
+    },
+    "validations": [],
+    "relations": {
+      "orders": {
+        "type": "hasMany",
+        "model": "Order",
+        "foreignKey": "accountId",
+        "options": {
+          "nestRemoting": true
+        }
+      }
+    },
+    "acls": [
+      {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "__create__orders"
+      },
+      {
+        "accessType": "EXECUTE",
+        "principalType": "ROLE",
+        "principalId": "$owner",
+        "permission": "ALLOW",
+        "property": "__get__orders"
+      }
+    ],
+    "methods": {}
+}  

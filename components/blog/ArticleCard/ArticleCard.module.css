@@ -1,0 +1,57 @@
+.card {
+  width: 788px;
+  margin-bottom: 30px;
+  border-bottom: 2px solid #E5E5E5;
+  font-family: Montserrat, sans-serif;
+  color: #081744;
+}
+
+.header {
+  font-weight: 500;
+  font-size: 36px;
+}
+
+.category {
+  font-size: 13px;
+  line-height: 16px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.button_1 {
+  text-decoration: none;
+}
+
+.info {
+  width: 203px;
+  justify-content: space-between;
+  font-size: 13px;
+  line-height: 16px;
+  color: #8B8E96;
+}
+
+.data {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.info,
+.data {
+  display: flex;
+  align-items: center;
+}
+
+.category,
+.description,
+.info {
+  margin: 16px 0;
+}
+
+.comments,
+.comments_count,
+.view {
+  margin-right: 10px;
+}

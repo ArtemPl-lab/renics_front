@@ -1,0 +1,24 @@
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    background: #336CCA;
+    height: 50px;
+    position: absolute;
+    top: -51px;
+    z-index: 1;
+    transition: top .3s;
+}
+.wrapper.active{
+    z-index: 2;
+    top: 0;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.userInfo{
+    display: flex;
+}

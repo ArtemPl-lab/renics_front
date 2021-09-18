@@ -1,0 +1,56 @@
+.card {
+  margin-bottom: 30px;
+  border-bottom: 2px solid #E5E5E5;
+  font-family: Montserrat, sans-serif;
+  color: #081744;
+}
+
+.header {
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 22px;
+}
+
+.description {
+  font-size: 14px;
+  line-height: 22px;
+}
+
+.tags {
+  display: flex;
+  column-gap: 16px;
+}
+
+
+.info {
+  display: flex;
+  align-items: center;
+}
+
+.info li {
+  padding: 0 20px;
+  font-size: 14px;
+  line-height: 22px;
+  color: #8B8E96;
+}
+
+.info li:first-child {
+  padding-left: 0;
+}
+
+.info li:not(:last-child) {
+  border-right: 1px solid #B4BCC4;
+}
+
+.link {
+  margin-left: 20px;
+  color: #336CCA;
+  font-size: 14px;
+  line-height: 22px;
+  text-decoration: none;
+}
+
+.description,
+.info {
+  margin: 18px 0;
+}

@@ -1,0 +1,13 @@
+.tagItem {
+  background: #F2F2F2;
+  border-radius: 5px;
+  color: #8B8E96;
+  padding: 4px 10px;
+  font-size: 13px;
+  line-height: 16px;
+  text-decoration: none;
+  transition: .3s;
+}
+.tagItem:hover{
+  opacity: .8;
+}

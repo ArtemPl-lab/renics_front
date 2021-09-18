@@ -1,0 +1,38 @@
+.search{
+    height: 42px;
+    display: flex;
+    position: relative;
+    width: 500px;
+}
+.input{
+    background: #21305F;
+    border: none;
+    outline: none;
+    padding: 0;
+    height: 100%;
+    border-radius: 21px;
+    padding-left: 28px;
+    width: 100%;
+    transition: .3s;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 22px;
+    color: #21305F;
+}
+.input:focus, .input:active{
+    background: #FFFFFF;
+    color: #081744;
+}
+.submit{
+    position: absolute;
+    right: 10px;
+    top: 11px;
+    background: none;
+    border: none;
+    outline: none;
+    transition: .3s;
+}
+.submit:hover{
+    opacity: .8;
+}
