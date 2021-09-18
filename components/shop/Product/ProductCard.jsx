@@ -57,20 +57,35 @@ export const SaleBtn = observer(props => {
     const t = useTranslations();
     const { cart } = useStore();
     const inCart = cart.has(props.id);
-    const addToCart = () => {
-        cart.addProduct(props.id);
+    let color = "default";
+    if(!props.inStock){
+        color = "gray";
+    } else if(inCart){
+        color = "blue";
     }
+    const addToCart = () => cart.addProduct(props.id);
     return (
         <Button 
-            className={styles.sale_button} 
-            active={inCart} 
-            href={inCart ? "/shop/cart" : ''}
-            onClick={!inCart ? addToCart : ()=>{}}
+            className={styles.sale_button}
+            color={color}
+            href={props.inStock ? 
+                (
+                    inCart ? 
+                    "/shop/cart" : 
+                    ''
+                ) :
+                `#preorder-${props.id}`
+            }
+            onClick={props.inStock && !inCart ? addToCart : () => {}}
         >
             {
-                inCart ? 
-                <>{t('К корзине')}<AddedCartIcon className={styles.added_icon}/></> :
-                <><CartIcon className={styles.sala_icon}/> {t('Купить')}</>
+                !props.inStock ?
+                <>Предзаказ</> :
+                (
+                    inCart ? 
+                    <>{t('К корзине')}<AddedCartIcon className={styles.added_icon}/></> :
+                    <><CartIcon className={styles.sala_icon}/> {t('Купить')}</>
+                )
             }
         </Button>
     );

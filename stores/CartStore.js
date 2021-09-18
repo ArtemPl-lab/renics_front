@@ -81,7 +81,7 @@ class CartStore{
                         }
                     })
                 )
-                if(!order) order = await account.Order.create();
+                if(!order) order = await account.orders.create();
                 Account.patchAttributes(account.id, {
                     currentOrder: order.id
                 });

@@ -7,6 +7,10 @@
     border: none;
     text-align: left;
     cursor: pointer;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 14px;
     box-sizing: border-box;
     border-radius: 20px;
     transition: .3s;
@@ -16,6 +20,7 @@
     position: relative;
     transition: .3s;
     text-decoration: none;
+    color: #FFFFFF;
 }
 
 .button::after{
@@ -40,7 +45,6 @@
     width: 165px;
 }
 .default{
-    color: #FFFFFF;
     background: #E90B54;
     font-style: normal;
     font-weight: bold;
@@ -65,16 +69,16 @@
 .gray:hover{
     background: rgba(242, 242, 242, 0.8);
 }
-.active{
+.blue{
     animation: colorise ease-in-out;
     animation-duration: .3s;
     background: #336CCA;
 }
-.active::after{
+.blue::after{
     animation: blink2 ease-in-out;
     animation-duration: .3s;
 }
-.active:hover{
+.blue:hover{
     background: rgba(51, 108, 202, 0.8);
 }
 @keyframes colorise{
