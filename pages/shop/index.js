@@ -97,8 +97,7 @@ const Shop = ({ products }) => {
     );
 }
 Shop.getInitialProps = async (ctx) => {
-    // const products = await Product.find();
-    const products = [];
+    const products = await Product.find();
     return { products }
 }
 export default Shop;
