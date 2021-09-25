@@ -19,6 +19,7 @@ export const Preorder = () => {
     const loadProduct = async () => {
         
         const productId = router.asPath.split('#preorder-')[1];
+        console.log(productId);
         if(productId){
             const prod = await Product.findById(productId);
             if(prod) setProduct(prod);

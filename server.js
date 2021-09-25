@@ -11,7 +11,7 @@ app.prepare().then(() => {
     server.use(
         '/api',
         createProxyMiddleware({
-            target: "https://api.renics.org:4000",
+            target: "https://api.renics.org",
             changeOrigin: true,
               pathRewrite: {
                     '/api': '/', 
